@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- <p id = "changetxt">Тут будет рисовалка!</p>-->
+	<!-- <p id = "mousedown"> Мышь не зажата</p>-->
+	<canvas id = "paint" width="600" height="300" style="border:1px solid black; ">
+	</canvas>
+	<div id = "color">
+		<h4>Цвет</h4> 
+		<select id = "color-list">
+  			<option>Красный </option>
+  			<option>Розовый </option>
+  			<option>Синий </option>
+  			<option>Голубой </option>
+  			<option>Зеленый </option>
+  			<option>Желтый </option>
+		</select>
+	</div>
+	<div id="tools">
+		<h4>Инструмент</h4>
+		<select id = "tool">
+			<option>Лучи</option>
+			<option>Карандаш</option>
+			<option>Ластик</option>
+		</select>
+	</div>
+	<div id="width">
+		<h4>Толщина</h4>
+		<select id = "depth-list">
+  			<option>1</option>
+  			<option>2</option>
+  			<option>3</option>
+  			<option>4</option>
+  			<option>5</option>
+  			<option>10</option>
+  			<option>15</option>
+  			<option>20</option>
+  			<option>30</option>
+		</select>
+	</div>
+	<div id="opacities">
+		<h4 id = "opacity">Непрозрачность</h4>
+		<select id = "opacity-list">
+  			<option>0.1</option>
+  			<option>0.2</option>
+  			<option>0.3</option>
+  			<option>0.4</option>
+  			<option>0.5</option>
+  			<option>0.6</option>
+  			<option>0.7</option>
+  			<option>0.8</option>
+  			<option>0.9</option>
+  			<option>1</option>
+		</select>
+	</div>
+	<script src = "main.js"></script>
+</body>
+</html>
