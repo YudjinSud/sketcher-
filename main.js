@@ -131,31 +131,10 @@ tool.onchange = function (event) {
 
 depthList.onchange = function(event) {
 	width = this.options[this.selectedIndex].value;
-	switch (width) {
-		case "1": cx.lineWidth = 1;break;
-		case "2": cx.lineWidth = 2;break;
-		case "3": cx.lineWidth = 3;break;
-		case "4": cx.lineWidth = 4;break;
-		case "5": cx.lineWidth = 5;break;
-		case "10": cx.lineWidth = 10;break;
-		case "15": cx.lineWidth = 15;break;
-		case "20": cx.lineWidth = 20;break;
-		case "30": cx.lineWidth = 30;break;
-	}
+	cx.lineWidth = parseFloat(width);
 }
 
 opacityList.onchange = function(event) {
 	opacity = this.options[this.selectedIndex].value;
-	switch(opacity) {
-		case "0.1": cx.globalAlpha = 0.1;break;
-		case "0.2": cx.globalAlpha = 0.2;break;
-		case "0.3": cx.globalAlpha = 0.3;break;
-		case "0.4": cx.globalAlpha = 0.4;break;
-		case "0.5": cx.globalAlpha = 0.5;break;
-		case "0.6": cx.globalAlpha = 0.6;break;
-		case "0.7": cx.globalAlpha = 0.7;break;
-		case "0.8": cx.globalAlpha = 0.8;break;
-		case "0.9": cx.globalAlpha = 0.9;break;
-		case "1": cx.globalAlpha = 1;break;
-	}
+	cx.globalAlpha = parseFloat(opacity);
 }
