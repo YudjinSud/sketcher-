@@ -37,13 +37,6 @@ canvas.onmousedown = function (event) {
 				  cx.moveTo(x,y);
 				  cx.lineTo(x1, y1);
 				  cx.stroke();
-			  } else if(cur_tool == 2) {
-				    cx.moveTo(x,y);
-				    if (x === x1 && y === y1) return;
-				    cx.lineTo(x1, y1);
-				    cx.stroke();
-  				  x = x1;
-  				  y = y1;
 			  } else {
 				    cx.moveTo(x,y);
 				    if (x === x1 && y === y1) return;
@@ -51,7 +44,7 @@ canvas.onmousedown = function (event) {
 				    cx.stroke();
   				  x = x1;
   				  y = y1;
-			  }
+			  } 
 		  }
 	  }
  }
